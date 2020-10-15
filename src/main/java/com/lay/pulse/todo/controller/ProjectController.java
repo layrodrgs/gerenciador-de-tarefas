@@ -40,7 +40,7 @@ public class ProjectController {
     }
 
     @PutMapping
-    @ApiOperation(value = "update a project")
+    @ApiOperation(value = "Update a project")
     public ResponseEntity<Project> update(@RequestBody Project project){
         Project projectUpdate = projectService.update(project);
         return ResponseEntity.ok(projectUpdate);
